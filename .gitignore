@@ -1,0 +1,5 @@
+# Ignore compiled binary
+cms/*
+guillotine-api
+
+.idea

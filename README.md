@@ -1,4 +1,4 @@
-# Guillotine CMS is a headerless CMS
+# Guillotine CMS is a headless CMS
 
 Guillotine CMS places these pillars at the heart of its design
 
@@ -6,6 +6,18 @@ Guillotine CMS places these pillars at the heart of its design
 * Security by default
 * Multilingual support and search
  
+## Cloud Agnostic
+
+You can host Guillotine CMS on AWS, Azure and Google Cloud along with other platforms
+
+[Hosting Guillotine on AWS](/deployments/terraform-aws)
+
+[Hosting Guillotine on Azure](/deployments/terraform-azure)
+
+[Hosting Guillotine on Google](/deployments/terraform-google)
+
+[Hosting Guillotine on Kubernetes](/deployments/terraform-google)
+
 ## User Interface Agnostic
 
 The platform will work with developers to allow content to be easily integrated into
@@ -48,7 +60,8 @@ https://www.elastic.co/elasticsearch/
 ### Caching
 
 The application is written with care and full attention to the RFC2616 to correctly use headers such as Modified-Since, 
-Etags etc... therefore we highly advocate using a content distribution network such as:
+Etags etc... therefore is easily cachable in web cache proxies, we highly advocate using a content distribution network such as:
+
 
 * AWS Cloudfront
 * Google Cloud CDN
